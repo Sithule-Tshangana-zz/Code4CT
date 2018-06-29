@@ -1,0 +1,319 @@
+body{
+  display: grid;
+}
+
+header {
+  width: 100%;
+}
+
+.navbar {
+  position: fixed;
+  top: 0px;
+  bottom: 1px;
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  z-index: 9999;
+}
+
+.navbar .nav {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: right;
+  margin-right: 20%;
+}
+
+.navbar .nav li {
+  list-style: none;
+  display: inline-block;
+  font-size: 18px;
+  padding: 5px;
+  font-weight: 300;
+  line-height: 80px;
+  margin-right: 20px;
+}
+
+
+.navbar .nav a {
+  padding: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar .logo {
+  float: left;
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 3%;
+  width: 70px;
+  height: 70px;
+  transition: 0.5s ease;
+  z-index: 10000;
+}
+.navbar .logo img {
+  width: 250px;
+  height: auto;
+  border-radius: 13px;
+  z-index: -100000000;
+}
+
+.slider{
+  margin-top:1000px;
+}
+
+.mySlides {display: none}
+slideshow-container img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  z-index: 0;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: fixed;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  color: #ffffff;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color:#e48e7e;
+}
+/* Caption text */
+.text {
+  background-color: #00000070;
+  color: white;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 200px;
+  width: 77%;
+  text-align: center;
+  line-height: 2;
+  margin-left: 165px;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  /* transition: background-color 0.6s ease; */
+}
+.code4ct {
+  /* height: 10%; */
+  width: 100%;
+}
+.Code4CT img {
+  height:100%;
+  width: 100%;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.slider{
+  margin-top:100px;
+}
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: black;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+}
+.Who_we_are{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+  font-size: 16px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.portrayal{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+}
+.team{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+.team_heading{
+  width: 80%;
+  margin: 0 auto;
+}
+.portfolio{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+.portfolio_text{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.portfolio_4_images{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+
+}
+.portfolio_4_images div img{
+  width: 100%;
+}
+
+.portfolio div img{
+  width: 100%;
+}
+
+.container{
+  background-color: black;
+  height: 220px;
+  overflow: hidden;
+}
+
+.carousel{
+  height: 220px;
+  width: 7888px;
+  animation-name: slideshow;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  position: relative;
+  left:1500px;
+}
+.carousel img{
+  display: inline;
+  height: 220px;
+}
+
+@keyframes slideshow {
+  100% {
+    position: relative;
+    left: -6500px;
+  }
+}
+#counter
+{
+  width: 300px;
+  height: 10px;
+  background: #e48e7e;
+  float:left;
+  margin:5px;
+}
+.count
+{
+  line-height: 100px;
+  color:white;
+  margin-left:100px;
+  font-size:30px;
+  background-color: black;
+}
+.counter_main{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 1fr;
+  background-color: black;
+  height: 132px;
+  color: white;
+}
+.subscribe{
+  margin-top: 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+.subscribe input{
+  width: 500px;
+  height: 46px;
+  width: 80%;
+  margin: 0 auto;
+  float:left;
+}
+.pink{
+  float:left;
+  background-color: #e48e7e;
+  width: 100px;
+  height: 30px;
+  margin-left: 700px;
+}
+.footer_Border{
+  background-color:#e48e7e;
+  height: 40px;
+}
+.footer_Border p{
+  float: left;
+}
+
+#social_media{
+  margin-left: 500px;
+}
+
+#social_media_icons li{
+  float: left;
+  margin-right: 15px;
+  list-style: none;
+}
+.code4ct_Contact_Information{
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0px 90px;
+}
+.code4ct_Team_Images{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2vw;
+}
+li img{
+  width: 25px;
+  height: 25px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.backToTop{
+  position: fixed;
+  bottom: 25%;
+  left: 25px;
+  z-index: 99;
+}
+
+#back_to_top{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}

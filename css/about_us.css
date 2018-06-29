@@ -1,0 +1,281 @@
+body{
+  overflow-x:hidden;
+}
+
+}
+header {
+  background-color: white;
+  width: 100%;
+}
+
+.navbar {
+  position: fixed;
+  top: 0px;
+  bottom: 1px;
+  height: 100px;
+  width: 100%;
+  background-color: white;
+
+}
+
+.navbar .nav {
+  padding: 0;
+  display: inline-block;
+  float: right;
+  margin-right: 5%;
+}
+
+.navbar .nav li {
+  list-style: none;
+  display: inline-block;
+  font-size: 18px;
+  padding: 5px;
+  font-weight: 300;
+  line-height: 80px;
+  margin-right: 20px;
+}
+
+
+.navbar .nav a {
+  background-color: #0c0c0c42;
+  padding: 10px;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 250px;
+}
+
+
+
+.navbar .logo {
+  float: left;
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 3%;
+  width: 70px;
+  height: 70px;
+  transition: 0.5s ease;
+}
+.navbar .logo img {
+  width: 250px;
+  height: auto;
+  border-radius: 13px;
+}
+.top{
+  background-color: #8080808a;
+  margin-top: 100px;
+}
+.intro_to_code4ct{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.aboutImage {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.intro_to_code4ct img{
+  grid-column: 2/3;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+.text {
+  line-height: 2.5;
+  width: 70%;
+  margin: 0 auto;
+}
+.text_button{
+  background-color:  #e48e7e;
+  height: 40px;
+  width: 100px;
+  margin-left: 150px;
+}
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.Who_we_are{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+  font-size: 16px;
+}
+.portrayal{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+}
+.team{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 33px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.portfolio{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.portfolio_4_images{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+
+}
+.portfolio_4_images div img{
+  width: 100%;
+}
+
+.portfolio div img{
+  width: 100%;
+}
+.code4ct_core{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap:1vw;
+
+}
+.code4ct_identity{
+  background-color: #00000014;
+}
+
+.code4ct_core h4{
+  color: rgb(216, 84, 84);
+}
+.code4ct_coreValues{
+  line-height: 25px;
+  font-size: 18px;
+}
+
+.code4ct_identityImage img{
+  float: left;
+  margin-right: 100px;
+  width: 550px;
+  height: 500px
+}
+#counter
+{
+  width: 300px;
+  height: 10px;
+  background: #e48e7e;
+  float:left;
+  margin:5px;
+}
+.count
+{
+  line-height: 100px;
+  color:white;
+  margin-left:100px;
+  font-size:30px;
+  background-color: black;
+}
+.counter_main{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 1fr;
+  background-color: black;
+  height: 132px;
+  color: white;
+}
+.subscribe{
+  margin-top: 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+.subscribe input{
+  width: 500px;
+  height: 46px;
+  margin-left: 508px;
+}
+.pink{
+  background-color: #e48e7e;
+  width: 100px;
+  height: 30px;
+  margin-left: 700px;
+}
+.footer_Border{
+  background-color:#e48e7e;
+  height: 40px;
+}
+
+.footer_Border p{
+  float: left;
+}
+
+#social_media{
+  margin-left: 500px;
+}
+
+#social_media_icons li{
+  float: left;
+  margin-right: 15px;
+  list-style: none;
+}
+.code4ct_Contact_Information{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0px 90px;
+}
+.code4ct_Team_Images{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2vw;
+}
+li img{
+  width: 25px;
+  height: 25px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.container{
+  background-color: black;
+  height: 220px;
+  overflow: hidden;
+}
+
+.carousel{
+  height: 220px;
+  width: 7888px;
+  animation-name: slideshow;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  position: relative;
+  left:1500px;
+}
+.carousel img{
+  display: inline;
+  height: 220px;
+}
+
+@keyframes slideshow {
+  100% {
+    position: relative;
+    left: -6500px;
+  }
+}
+.backToTop{
+  position: fixed;
+  bottom: 25%;
+  left: 25px;
+  z-index: 99;
+}
+
+#back_to_top{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
