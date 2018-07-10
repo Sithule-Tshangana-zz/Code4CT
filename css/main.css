@@ -210,7 +210,7 @@ slideshow-container img {vertical-align: middle;}
   height: 220px;
   width: 7888px;
   animation-name: slideshow;
-  animation-duration: 30s;
+  animation-duration: 40s;
   animation-iteration-count: infinite;
   position: relative;
   left:1500px;
