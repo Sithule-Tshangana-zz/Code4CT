@@ -3,115 +3,481 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/courses.css">
+  <script src="js/jquery-1.6.1.min.js"></script>
+  <script src="js/hamburger.js"></script>
+  <link rel="stylesheet" href="css/nav.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
-  <style>
-  body { text-align: center; padding: 150px; }
-  h1 { font-size: 50px; }
-  body { font: 20px Helvetica, sans-serif; color: #333; }
-  article { display: block; text-align: left; width: 650px; margin: 0 auto; }
-  a { color: #dc8100; text-decoration: none; }
-  a:hover { color: #333; text-decoration: none; }
-  </style>
+  <title>Courses</title>
 </head>
 <body>
   <header>
-    <div class="navbar">
-      <ul class="nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="courses.html">Courses</a></li>
-        <li><a href="about_us.html">About</a></li>
-        <li><a href="portfolio.html">portfolio</a></li>
-        <li><a href="contact_us.html">contact</a></li>
-        <li>        <form>
-          Search      <input type="text" name="search" placeholder="Search..">
-        </form></li>
-      </ul>
-      <div class="logo">
-        <a href="#"><img src="img/code4ct-logoDiff.png" class="code4ct" ></a>
-      </div>
-    </div>
+    <header style="background-color: white">
+
+        <nav>
+          <a href="courses.html"><img src="images/code4ct-logo-1.jpg"></a>
+            <button id="hamburger">{|||}</button>
+            <ul class="navLinks" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about_us.html">About</a></li>
+                <li><a href="portfolio.html">portfolio</a></li>
+                <li><a href="contact_us.html">contact</a></li>
+                <li><form>
+                search  <input type="text" name="search" placeholder="Search..">
+                </form></li>
+            </ul>
+        </nav>
+   </header>
   </header>
-  <article>
-    <h1>We&rsquo;ll be back soon!</h1>
-    <div>
-      <p>Sorry for the inconvenience but we&rsquo;re performing some maintenance at the moment. If you need to you can always <a href="contact_us.html">contact us</a>, otherwise we&rsquo;ll be back online shortly!</p>
-      <p>&mdash; Sithule</p>
-    </div>
-  </article>
-  <script type="text/javascript">
-  'use strict';
+  <div class="top">
+      <center> <h1>Courses</h1> </center>
+      <center> <h3 style="color:red; display: inline">Home</h3> &#x2192;Courses </center>
+                  </div>
+  <div class="container">
+     <header class="header">
+       <h3 class="header-logo">Courses</h3>
+     </header>
 
-// let items = document.getElementsByClassName('item);
-// console.log(items);
+     <div class="products">
 
-let cart = [
-  // { name : name, price : price,},
-  // { name : name, price : price,},
-  // { name : name, price : price,},
-  // { name : name, price : price,},
-  // { name : name, price : price,},
-  // { name : name, price : price,},
-];
 
-function addCart(name , price) {
 
-  // create item
-  let item = {
-      name: name,
-      price: price,
-  };
+     </div><!-- products -->
 
-  // check if array empty
-  if (cart.length != 0){
-      // search an item in an array
+     <div class="shopping-cart">
+       <div class="shopping-cart-head">
+         <span class="product-quantity">0</span> Course(s) in Cart
+       </div>
+       <ul class="shopping-cart-list">
+       </ul>
+       <div class="cart-buttons">
+         <a href="#0" class="button empty-cart-btn">Empty</a>
+         <a href="#0" class="button cart-checkout">Checkout - <span class="total-price">R0</span></a>
+       </div>
+     </div>
+   </div><!-- container -->
 
-      let check = false;
-      for (let cartItem in cart) {
-          if (cart[cartItem].name === item.name){
-              check = true;
-          }
-      }
+   <footer>
+       <div class="code4ct_Contact_Information">
+           <div class="code4ct_contact_details">
+               <ol>
+                   <div class="address">
+                       <h2>Contact info</h2>
+                       <p><img class="alignnone wp-image-3715" src="http://code4ct.com/wp-content/uploads/2015/06/email-300x300.png" alt="email" width="20" height="20" srcset="http://code4ct.com/wp-content/uploads/2015/06/email-300x300.png 300w, http://code4ct.com/wp-content/uploads/2015/06/email-150x150.png 150w, http://code4ct.com/wp-content/uploads/2015/06/email.png 512w" sizes="(max-width: 20px) 100vw, 20px">  info@code4ct.com</p>
+                       <p>  <img class="alignnone wp-image-3718" src="http://code4ct.com/wp-content/uploads/2015/06/telephone-symbol-icon-83700-300x300.png" alt="telephone-symbol-icon-83700" width="20" height="20" srcset="http://code4ct.com/wp-content/uploads/2015/06/telephone-symbol-icon-83700-300x300.png 300w, http://code4ct.com/wp-content/uploads/2015/06/telephone-symbol-icon-83700-150x150.png 150w, http://code4ct.com/wp-content/uploads/2015/06/telephone-symbol-icon-83700.png 512w" sizes="(max-width: 20px) 100vw, 20px">  021 685 0991</p>
+                       <p><img class="alignnone wp-image-3714" src="http://code4ct.com/wp-content/uploads/2015/06/648819-star-ratings-512-300x300.png" alt="648819-star-ratings-512" width="20" height="20" srcset="http://code4ct.com/wp-content/uploads/2015/06/648819-star-ratings-512-300x300.png 300w, http://code4ct.com/wp-content/uploads/2015/06/648819-star-ratings-512-150x150.png 150w, http://code4ct.com/wp-content/uploads/2015/06/648819-star-ratings-512.png 512w" sizes="(max-width: 20px) 100vw, 20px">  Innovate South Africa, <br>
+                           &nbsp &nbsp &nbsp 403 Old Castle Brewery, 6 Beach Rd, <br>
+                           &nbsp &nbsp &nbsp Woodstock, Cape Town, 7915</p>
 
-      // if check returns false, item was not found in the array.
 
-      if (!check) {cart.push(item)}
 
-      // else push to array
+                   </div>
+           </div>
+           <div class="code4ct_extra_information">
+               <h5>Company</h5>
+               <ul>
+                   <li><a href="">Home</a></li>
+                   <li><a href="">Contact</a></li>
+                   <li><a href="">About</a></li>
+                   <li><a href="">Portfolio</a></li>
+                   <li><a href="">Courses</a></li>
 
-  }
-  else{
-      cart.push(item);
-  }
+               </ul>
+           </div>
+           <div class="code4ct_feedback">
+               <h5>Help & Support</h5>
+               <ul>
+                   <li>Help centre</li>
+                   <li>Free simple Template</li>
+                   <li>Refund policy</li>
+                   <li>Report span</li>
+               </ul>
+           </div>
 
-  // get cart div
-  let div = document.getElementById('cart');
-  // clear cart
-  div.innerHTML = "";
+       </div>
+       <div class="footer_Border">
+           <p>COPYRIGHT &copy 2018 <strong>PRIVACY POLICY</STRONG></p>
+           <p id="social_media" style="float: left;">Follow us:
+           <ul id="social_media_icons">
+               <li><a href="https://www.facebook.com/code4ct/" target="_blank"><img src="images/Logos-Facebook-icon.png" ></a></li>
+               <li><a href="https://twitter.com/@code4ct" target="_blank"><img src="images/Twitter-icon.png"></a></li>
+               <li><a href="https://www.facebook.com/code4ct/" target="_blank"><img src="images/Pinterest-icon.png"></a></li>
+               <li><a href="https://www.linkedin.com/company/9414552/" target="_blank"><img src="images/linkedin_Icon.png"></a></li>
+               <li><a href="https://www.facebook.com/code4ct/" target="_blank"><img src="images/skype_icon.png"></a></li>
+           </ul>
+           </p>
+       </div>
+       <div class="backToTop">
+           <a href=''><img src="images/back2top..PNG" alt="back_Top_Icon" id="back_to_top"></a>
+       </div>
+   </footer>
 
-  // show cart with updated array
-  for (let value in cart) {
+</body>
+<script type="text/javascript">
+var ShoppingCart = (function($) {
+"use strict";
 
-      // create a <li> node
-      let node = document.createElement("LI");
-      // create text node
-      let textnode = document.createTextNode(cart[value].name);
+// Cahce necesarry DOM Elements
+var productsEl = document.querySelector(".products"),
+    cartEl =     document.querySelector(".shopping-cart-list"),
+    productQuantityEl = document.querySelector(".product-quantity"),
+    emptyCartEl = document.querySelector(".empty-cart-btn"),
+    cartCheckoutEl = document.querySelector(".cart-checkout"),
+    totalPriceEl = document.querySelector(".total-price");
 
-      // Append the text to <li>
-      node.appendChild(textnode);
+// Fake JSON data array here should be API call
+var products = [
+  {
+    id: 0,
+    name: "Create With Code Series",
+    description: "The Create with Code series is designed to give learners an introduction to the exciting world of coding, helping them to explore how creative coding can be. The package includes a testing day in which learners’ aptitude is assessed.",
+    // imageUrl: "http://www.icentar.me/phone/6s/images/goldbig.jpg",
+    price: 1800
+  },
+  {
+    id: 1,
+    name: "Tech Innovators Level 1",
+    description: "Covering an introduction to web development as well as an introduction to design thinking, this course helps a learner explore how technology can be used for social innovation while developing fundamentals knowledge of programming. ",
+    // imageUrl: "http://www.icentar.me/phone/5s/images/silverbig.png",
+    price: 4200,
+  },
+  {
+    id: 2,
+    name: "Tech Innovators Level 2",
+    description: "Going beyond the basics, this course enables a learner move from basic coding proficiency to the level where they are able to implement a basic coding project independently. The course has a strong focus on developing leadership skills and offers abundant opportunity for learners to interact with the tech industry.",
+    // imageUrl: "http://www.icentar.me/mac/macbook/images/pro.jpg",
+    price: 5600
+  },
+  {
+    id: 3,
+    name: "Intro to Coding: Web Pages",
+    description: "Code a simple one-page website using HTML and JQuery.",
+    // imageUrl: "http://www.icentar.me/mac/mbair/images/air.jpg",
+        duration: "3 hours",
+    price: 250
 
-      // Append <li> to <ul> with id="myList"
+  },
+  {
+    id: 4,
+    name: "Intro to Coding: Music",
+    description: "Code a song using SonicPi software on a Raspberry Pi computer..",
+    // imageUrl: "http://www.icentar.me/mac/mbair/images/air.jpg",
+      duration: "3 hours",
+    price: 250
+  },
+  {
+    id: 5,
+    name: "Intro to Coding: Animation",
+    description: "Create a 2D animation using coding language JavaScript..",
+    // imageUrl: "http://www.icentar.me/mac/mbair/images/air.jpg",
+    duration: "3 hours",
+  price: 250
+  },
+  {
+    id: 6,
+    name: "Create with Code: Web Pages",
+    description: "Learn how the internet works and code a simple one-page website using HTML, CSS and JQuery.",
+    // imageUrl: "http://www.icentar.me/mac/mbair/images/air.jpg",
+    duration: "3 days",
+  price: 960
+  },
+  {
+    id: 7,
+    name: "Create with Code: Music",
+    description: "Learn computer science principles by coding music with a Raspberry Pi computer.",
+    // imageUrl: "http://www.icentar.me/mac/mbair/images/air.jpg",
+    duration: "3 days",
+  price: 960
+  },
+  {
+    id:8 ,
+    name: "Create with Code: Animation",
+    description: "Learn computer science principles by coding animations using JavaScript.",
+    // imageUrl: "http://www.icentar.me/mac/mbair/images/air.jpg",
+    duration: "3 days",
+  price: 960
+},
+  {
+    id:9 ,
+    name: "Create with Code: Animation",
+    description: "Learn computer science principles by coding animations using JavaScript.",
+    // imageUrl: "http://www.icentar.me/mac/mbair/images/air.jpg",
+    duration: "3 days",
+  price: 960
+},
+  {
+    id: 10,
+    name: "Getting started as a developer",
+    description: "Learn how to set up a development environment and practical skills to start coding.",
+    // imageUrl: "http://www.icentar.me/mac/mbair/images/air.jpg",
+    duration: "3 hours",
+  price: 250
+},
+  {
+    id: 11,
+    name: "Create with Code: Animation",
+    description: "Learn computer science principles by coding animations using JavaScript.",
+    // imageUrl: "http://www.icentar.me/mac/mbair/images/air.jpg",
+    duration: "3 days",
+  price: 960
+},
+  {
+    id: 12,
+    name: "Beginner JavaScript",
+    description: "Develop a basic proficiency in programming structures and methods in JavaScript so that you are able to create an interactive web application.",
+    // imageUrl: "http://www.icentar.me/mac/mbair/images/air.jpg",
+    duration: "6 days",
+  price: 1800
+},
+  {
+    id: 13,
+    name: "Beginner Front End Web Development",
+    description: "Develop a good proficiency in CSS and an understanding of web design principles so that you are able to create visually pleasing web pages.",
+    // imageUrl: "http://www.icentar.me/mac/mbair/images/air.jpg",
+    duration: "6 days",
+  price: 1800
+},
+  {
+    id: 14,
+    name: "Beginner Python",
+    description: "Develop a basic proficiency in programming principles and methods in Python.",
+    // imageUrl: "http://www.icentar.me/mac/mbair/images/air.jpg",
+    duration: "6 days",
+  price: 1800
+},
+  {
+    id: 15,
+    name: "Full Stack JavaScript",
+    description: "Develop an understanding of the front and backend development environment and basic proficiency in server side JavaScript and object-oriented programming. By the end of the course you will be able to architect an application, control flow in an application and persist and retrieve data in a database.",
+    // imageUrl: "http://www.icentar.me/mac/mbair/images/air.jpg",
+    duration: "6 days",
+  price: 1800
+},
+  {
+    id: 16,
+    name: "Website Deployment",
+    description: "Learn how to manage and deploy code to a server environment so that you can host your own web pages.",
+    // imageUrl: "http://www.icentar.me/mac/mbair/images/air.jpg",
+    duration: "6 days",
+  price: 1800
+},
+  {
+    id: 17,
+    name: "Innovation Challenge",
+    description: "Work in groups to design an innovative solution to a social issue by using the design thinking process.",
+    // imageUrl: "http://www.icentar.me/mac/mbair/images/air.jpg",
+    duration: "3 days",
+  price: 750
+},
+  {
+    id: 18,
+    name: "CodeStorm",
+    description: "Work in groups to create and present a code project that addresses a particular issue. ",
+    // imageUrl: "http://www.icentar.me/mac/mbair/images/air.jpg",
+    duration: "5 days",
+  price: 1500
+},
+  {
+    id: 19,
+    name: "Hackathon",
+    description: "Learn how to manage and deploy code to a server environment so that you can host your own web pages.",
+    // imageUrl: "http://www.icentar.me/mac/mbair/images/air.jpg",
+    duration: "",
+  price: ""
+},
+  {
+    id: 20,
+    name: "Industry Immersion",
+    description: "Spend a week at a tech company and gain experience in industry.",
+    // imageUrl: "http://www.icentar.me/mac/mbair/images/air.jpg",
+    duration: "5 days",
+  price: 1500
+},
+  {
+    id: 21,
+    name: "Create with Code: Animation",
+    description: "Learn computer science principles by coding animations using JavaScript.",
+    // imageUrl: "http://www.icentar.me/mac/mbair/images/air.jpg",
+    duration: "3 days",
+  price: 960
+},
+  {
+    id: 22,
+    name: "CCode Conversation",
+    description: "Learn about tech careers from a panel of working professionals who will share their experiences with you.",
+    // imageUrl: "http://www.icentar.me/mac/mbair/images/air.jpg",
+    duration: "1 days",
+  price: 300
+},
+  {
+    id: 23,
+    name: "Presentation Skills",
+    description: "Learn how to present your skills effectively.",
+    // imageUrl: "http://www.icentar.me/mac/mbair/images/air.jpg",
+    duration: "1 days",
+  price: 300
+},
+  {
+    id: 24,
+    name: "CV & LinkedIn",
+    description: "Learn how to present your skills effectively",
+    // imageUrl: "http://www.icentar.me/mac/mbair/images/air.jpg",
+    duration: "1 days",
+  price: 300
+},
+{   id: 24,
+    name: "CV & LinkedIn",
+    description: "Learn how to present your skills effectively",
+    // imageUrl: "http://www.icentar.me/mac/mbair/images/air.jpg",
+    duration: "1 days",
+  price: 300
+},
+{     id: 25,
+    name: "Networking",
+    description: "Learn how to present yourself professionally when networking and put your skills to the test by attending local tech events. You will attend a training session and attend one event of your choice.",
+    // imageUrl: "http://www.icentar.me/mac/mbair/images/air.jpg",
+    duration: "1 days",
+  price: 300
+},
+{    id: 26,
+    name: "Digital Communication Skills",
+    description: "Learn how to communicate and collaborate in a 21st century work environment using digital workplace tools.",
+    // imageUrl: "http://www.icentar.me/mac/mbair/images/air.jpg",
+    duration: "1 days",
+  price: 300
+},
+{     id: 27,
+    name: "Applying to Tertiary Studies",
+    description: "Make informed decisions about your future studies.",
+    // imageUrl: "http://www.icentar.me/mac/mbair/images/air.jpg",
+    duration: "1 days",
+  price: 300
+}
+],
+    productsInCart = [];
 
-      div.appendChild(node);
+// Pretty much self explanatory function. NOTE: Here I have used template strings (ES6 Feature)
+var generateProductList = function() {
+  products.forEach(function(item) {
+    var productEl = document.createElement("div");
+    productEl.className = "product";
+    productEl.innerHTML = `<div class="product-image">
+
+                           </div>
+                           <div class="product-name"><span>Course:</span> ${item.name}</div>
+                           <div class="product-description"><span>About:</span> ${item.description}</div>
+                           <div class="duration"><span>Duration:</span> ${item.duration}</div>
+                           <div class="product-price"><span>Price:</span>R ${item.price} </div>
+                           <div class="product-add-to-cart">
+                             <a href="#0" class="button see-more">code4ct</a>
+                             <a href="#0" class="button add-to-cart" data-id=${item.id}>Add to Cart</a>
+                           </div>
+                        </div>
+`;
+
+productsEl.appendChild(productEl);
+  });
+}
+
+// Like one before and I have also used ES6 template strings
+var generateCartList = function() {
+
+  cartEl.innerHTML = "";
+
+  productsInCart.forEach(function(item) {
+    var li = document.createElement("li");
+    li.innerHTML = `${item.quantity} ${item.product.name} - R${item.product.price * item.quantity}`;
+    cartEl.appendChild(li);
+  });
+
+  productQuantityEl.innerHTML = productsInCart.length;
+
+  generateCartButtons()
+}
+
+
+var generateCartButtons = function() {
+  if(productsInCart.length > 0) {
+    emptyCartEl.style.display = "block";
+    cartCheckoutEl.style.display = "block"
+    totalPriceEl.innerHTML = "R " + calculateTotalPrice();
+  } else {
+    emptyCartEl.style.display = "none";
+    cartCheckoutEl.style.display = "none";
   }
 }
 
-// STILL TO DO
-// remove an item from cart
-// write a function that calculates the total of the cart
-// add a quantity to cart items
-// be able to increase and decrease the quantity
-// REMEMBER the cart total must update as the quantity changes
-  </script>
-</body>
+var setupListeners = function() {
+  productsEl.addEventListener("click", function(event) {
+    var el = event.target;
+    if(el.classList.contains("add-to-cart")) {
+     var elId = el.dataset.id;
+     addToCart(elId);
+    }
+  });
+
+  emptyCartEl.addEventListener("click", function(event) {
+    if(confirm("Are you sure?")) {
+      productsInCart = [];
+    }
+    generateCartList();
+  });
+}
+
+
+var addToCart = function(id) {
+  var obj = products[id];
+  if(productsInCart.length === 0 || productFound(obj.id) === undefined) {
+    productsInCart.push({product: obj, quantity: 1});
+  } else {
+    productsInCart.forEach(function(item) {
+      if(item.product.id === obj.id) {
+        item.quantity++;
+      }
+    });
+  }
+  generateCartList();
+}
+
+
+var productFound = function(productId) {
+  return productsInCart.find(function(item) {
+    return item.product.id === productId;
+  });
+}
+
+var calculateTotalPrice = function() {
+  return productsInCart.reduce(function(total, item) {
+    return total + (item.product.price *  item.quantity);
+  }, 0);
+}
+
+var init = function() {
+  generateProductList();
+  setupListeners();
+}
+
+return {
+  init: init
+};
+
+})(jQuery);
+
+ShoppingCart.init();
+jQuery(document).ready(function ($) {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() >= 800) {
+            $('.backToTop').fadeIn('slow');
+        } else {
+            $('.backToTop').fadeOut('slow');
+        }
+    });
+    $('.backToTop').click(function () {
+        $('html,header').animate({
+            scrollTop: 0
+        }, 2000);
+        return false;
+    });
+});
+</script>
 </html>

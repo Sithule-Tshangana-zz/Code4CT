@@ -4,30 +4,33 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/portfolio.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <title></title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+  <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+   <script src="js/hamburger.js"></script>
+        <link rel="stylesheet" href="css/nav.css">
+  <title>Code4CT Portfolio</title>
 </head>
 <body>
-  <header>
-    <div class="navbar">
-      <ul class="nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="courses.html">Courses</a></li>
-        <li><a href="about_us.html">About</a></li>
-        <li><a href="portfolio.html">portfolio</a></li>
-        <li><a href="contact_us.html">contact</a></li>
-        <li>        <form>
-          Search      <input type="text" name="search" placeholder="Search..">
-        </form></li>
-      </ul>
-      <div class="logo">
-        <a href="#"><img src="img/code4ct-logoDiff.png" class="code4ct" ></a>
-      </div>
-    </div>
+    <header style="background-color: white">
+       <nav>
+              <a href="portfolio.html"><img src="images/code4ct-logo-1.jpg"></a>
+                <button id="hamburger">{|||}</button>
+                <ul class="navLinks" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about_us.html">About</a></li>
+                    <li><a href="portfolio.html">portfolio</a></li>
+                    <li><a href="contact_us.html">contact</a></li>
+                    <li><form>
+                    search  <input type="text" name="search" placeholder="Search..">
+                    </form></li>
+                </ul>
+            </nav>
   </header>
   <div class="top">
     <center> <h1>Our portfolio</h1> </center>
-    <center> <h3>pages &#x2192;portfolio<h3> </center>
+    <center><h3 style="color:red; display: inline">Home</h3> &#x2192;PORTFOLIO </center>
     </div>
     <div class="portfolio_text">
       <h2>Our awesome portfolio</h2>
@@ -44,38 +47,44 @@
         5 are enrolled in Health
         12 are enrolled in an IT skills training program/internship</p></center>
       </div>
-      <div class="container_div">
-        <div class=""><img src="img/Code-Camp-2015-Girls-Code-Tutor.jpg" alt=""></div>
-        <div class=""><img src="img/Code-Camp-2015-Girls-STEM.jpg" alt=""></div>
-        <div class=""><img src="img/Code-Camp-2015-STEM-Girls-Pilot-Sakimkamva.jpg" alt=""></div>
-        <div class=""><img src="img/Code-Coach-Code4CT.jpg" alt=""></div>
-        <div class=""><img src="img/Code-Conversation-Code4CT-Women-In-Tech.jpg" alt=""></div>
-        <div class=""><img src="img/code4ct_homeslider2..jpg" alt=""></div>
-        <div class=""><img src="img/code4ct_homeslider3...jpg" alt=""></div>
-        <div class=""><img src="img/Code4CT-Code-Week-2017-Bandwidth-Barn.jpg" alt=""></div>
-        <div class=""><img src="img/CSG-International-Code4CT.jpg" alt=""></div>
-        <div class=""><img src="img/Host-Company-Semantica-Code4CT.jpg" alt=""></div>
-        <div class=""><img src="img/img1.jpg" alt=""></div>
-        <div class=""><img src="img/img2.png" alt=""></div>
+      <div class="container_div gallery clearfix">
+        <div class="image_box"><a href="images/Code-Camp-2015-Girls-Code-Tutor.jpg" rel="prettyPhoto[gallery1]"><img src="images/Code-Camp-2015-Girls-Code-Tutor.jpg" alt=""></a></div>
+        <div class="image_box"><a href="images/Code-Camp-2015-Girls-STEM.jpg" rel="prettyPhoto[gallery1]"><img src="images/Code-Camp-2015-Girls-STEM.jpg" alt=""></a></div>
+        <div class="image_box"><a href="images/Code-Camp-2015-STEM-Girls-Pilot-Sakimkamva.jpg" rel="prettyPhoto[gallery1]"><img src="images/Code-Camp-2015-STEM-Girls-Pilot-Sakimkamva.jpg" alt=""></a></div>
+        <div class="image_box"><a href="images/Code-Coach-Code4CT.jpg" rel="prettyPhoto[gallery1]"><img src="images/Code-Coach-Code4CT.jpg" alt=""></a></div>
+        <div class="image_box"><a href="images/Code-Conversation-Code4CT-Women-In-Tech.jpg" rel="prettyPhoto[gallery1]"><img src="images/Code-Conversation-Code4CT-Women-In-Tech.jpg" alt=""></a></div>
+        <div class="image_box"><a href="images/code4ct_homeslider2..jpg" rel="prettyPhoto[gallery1]"><img src="images/code4ct_homeslider2..jpg" alt=""></a></div>
+        <div class="image_box"><a href="images/code4ct_homeslider3...jpg" rel="prettyPhoto[gallery1]"><img src="images/code4ct_homeslider3...jpg" alt=""></a></div>
+        <div class="image_box"><a href="images/Code4CT-Code-Week-2017-Bandwidth-Barn.jpg" rel="prettyPhoto[gallery1]"><img src="images/Code4CT-Code-Week-2017-Bandwidth-Barn.jpg" alt=""></a></div>
+        <div class="image_box"><a href="images/CSG-International-Code4CT.jpg" rel="prettyPhoto[gallery1]"><img src="images/CSG-International-Code4CT.jpg" alt=""></a></div>
+        <div class="image_box"><a href="images/Host-Company-Semantica-Code4CT.jpg" rel="prettyPhoto[gallery1]"><img src="images/Host-Company-Semantica-Code4CT.jpg" alt=""></a></div>
+        <div class="image_box"><a href="images/img1.jpg" rel="prettyPhoto[gallery1]"><img src="images/img1.jpg" alt=""></a></div>
+        <div class="image_box"><a href="images/img2.png" rel="prettyPhoto[gallery1]"><img src="images/img2.png" alt=""></a></div>
+      </div>
+
+      <div class="dots">
+         <a href="portfolio.html"><button type="button" name="button"><center> 1 </center> </button></a>
+        <a href="portfolio2.html"><button type="button" name="button"><center> 2 </center> </button></a>
+
       </div>
       <div class="container">
         <div class="carousel">
-          <img src="img/Code4CT-Partners-Automattic-Logo.png" alt="">
-          <img src="img/Code4CT-Partners-CSG-Logo.png" alt="">
-          <img src="img/Code4CT-Partners-Deloitte-Digital.png" alt="">
-          <img src="img/Code4CT-Partners-Lwande.png" alt="">
-          <img src="img/Code4CT-Partners-Mobenzi-Logo.png" alt="">
-          <img src="img/Code4CT-Partners-Open-Box.png" alt="">
-          <img src="img/Code4CT-Partners-Saratoga-Logo.png" alt="">
-          <img src="img/Code4CT-Partners-Take-A-Lot-Logo-1.png" alt="">
-          <img src="img/Code4CT-Partners-TNS.png" alt="">
-          <img src="img/Code4CT-Partners-US-Department-Of-State-Logo.png" alt="">
-          <img src="img/Code4ct-Partners-WeTech.png" alt="">
-          <img src="img/Code4ct-Partners-Where-Is-My-Transport.png" alt="">
-          <img src="img/rsz_1aws_logo_web_300px_2.png" alt="">
-          <img src="img/DGMurrayTrust-1.png" alt="">
-          <img src="img/partner_capitec-1.png" alt="">
-          <img src="img/partner_google-1.png" alt="">
+          <img src="images/Code4CT-Partners-Automattic-Logo.png" alt="">
+          <img src="images/Code4CT-Partners-CSG-Logo.png" alt="">
+          <img src="images/Code4CT-Partners-Deloitte-Digital.png" alt="">
+          <img src="images/Code4CT-Partners-Lwande.png" alt="">
+          <img src="images/Code4CT-Partners-Mobenzi-Logo.png" alt="">
+          <img src="images/Code4CT-Partners-Open-Box.png" alt="">
+          <img src="images/Code4CT-Partners-Saratoga-Logo.png" alt="">
+          <img src="images/Code4CT-Partners-Take-A-Lot-Logo-1.png" alt="">
+          <img src="images/Code4CT-Partners-TNS.png" alt="">
+          <img src="images/Code4CT-Partners-US-Department-Of-State-Logo.png" alt="">
+          <img src="images/Code4ct-Partners-WeTech.png" alt="">
+          <img src="images/Code4ct-Partners-Where-Is-My-Transport.png" alt="">
+          <img src="images/rsz_1aws_logo_web_300px_2.png" alt="">
+          <img src="images/DGMurrayTrust-1.png" alt="">
+          <img src="images/partner_capitec-1.png" alt="">
+          <img src="images/partner_google-1.png" alt="">
         </div>
       </div>
       <footer>
@@ -120,16 +129,16 @@
               <p>COPYRIGHT &copy 2018 <strong>PRIVACY POLICY</STRONG></p>
                 <p id="social_media" style="float: left;">Follow us:
                   <ul id="social_media_icons">
-                    <li><a href="https://www.facebook.com/code4ct/" target="_blank"><img src="img/Logos-Facebook-icon.png" ></a></li>
-                    <li><a href="https://twitter.com/@code4ct" target="_blank"><img src="img/Twitter-icon.png"></a></li>
-                    <li><a href="https://www.facebook.com/code4ct/" target="_blank"><img src="img/Pinterest-icon.png"></a></li>
-                    <li><a href="https://www.linkedin.com/company/9414552/" target="_blank"><img src="img/linkedin_Icon.png"></a></li>
-                    <li><a href="https://www.facebook.com/code4ct/" target="_blank"><img src="img/skype_icon.png"></a></li>
+                    <li><a href="https://www.facebook.com/code4ct/" target="_blank"><img src="images/Logos-Facebook-icon.png" ></a></li>
+                    <li><a href="https://twitter.com/@code4ct" target="_blank"><img src="images/Twitter-icon.png"></a></li>
+                    <li><a href="https://www.facebook.com/code4ct/" target="_blank"><img src="images/Pinterest-icon.png"></a></li>
+                    <li><a href="https://www.linkedin.com/company/9414552/" target="_blank"><img src="images/linkedin_Icon.png"></a></li>
+                    <li><a href="https://www.facebook.com/code4ct/" target="_blank"><img src="images/skype_icon.png"></a></li>
                   </ul>
                 </p>
               </div>
               <div class="backToTop">
-                <a href=''><img src="img/back2top..PNG" alt="back_Top_Icon" id="back_to_top"></a>
+                <a href=''><img src="images/back2top..PNG" alt="back_Top_Icon" id="back_to_top"></a>
               </div>
             </footer>
             <script type="text/javascript">
@@ -149,5 +158,27 @@
               });
             });
             </script>
+
+            <script type="text/javascript" charset="utf-8">
+      			$(document).ready(function(){
+      				$("area[rel^='prettyPhoto']").prettyPhoto();
+
+      				$(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000,});
+      				$(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: false});
+
+      				$("#custom_content a[rel^='prettyPhoto']:first").prettyPhoto({
+      					custom_markup: '<div id="map_canvas" style="width:260px; height:265px"></div>',
+      					changepicturecallback: function(){ initialize(); }
+      				});
+
+      				$("#custom_content a[rel^='prettyPhoto']:last").prettyPhoto({
+      					custom_markup: '<div id="bsap_1259344" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div><div id="bsap_1237859" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6" style="height:260px"></div><div id="bsap_1251710" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div>',
+      					changepicturecallback: function(){ _bsap.exec(); }
+      				});
+      			});
+      			</script>
+
+
+
           </body>
           </html>

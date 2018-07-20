@@ -1,61 +1,14 @@
 body{
   display: grid;
 }
+button:hover {
+  visibility: visible;
+  width: 110px;
+}
 
 header {
-  width: 100%;
-}
-
-.navbar {
-  position: fixed;
-  top: 0px;
-  bottom: 1px;
-  height: 100px;
-  width: 100%;
+  width: 80%;
   background-color: white;
-  z-index: 9999;
-}
-
-.navbar .nav {
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  float: right;
-  margin-right: 20%;
-}
-
-.navbar .nav li {
-  list-style: none;
-  display: inline-block;
-  font-size: 18px;
-  padding: 5px;
-  font-weight: 300;
-  line-height: 80px;
-  margin-right: 20px;
-}
-
-
-.navbar .nav a {
-  padding: 10px;
-  text-decoration: none;
-  color: inherit;
-}
-
-.navbar .logo {
-  float: left;
-  display: inline-block;
-  margin-top: 5px;
-  margin-left: 3%;
-  width: 70px;
-  height: 70px;
-  transition: 0.5s ease;
-  z-index: 10000;
-}
-.navbar .logo img {
-  width: 250px;
-  height: auto;
-  border-radius: 13px;
-  z-index: -100000000;
 }
 
 .slider{
@@ -134,7 +87,7 @@ slideshow-container img {vertical-align: middle;}
   background-color: #717171;
 }
 .slider{
-  margin-top:100px;
+  margin-top:0;
 }
 .wrapper{
   display: grid;
@@ -147,7 +100,7 @@ slideshow-container img {vertical-align: middle;}
 .Who_we_are{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: auto;
   grid-gap: 10px;
   font-size: 16px;
   width: 80%;
@@ -157,8 +110,12 @@ slideshow-container img {vertical-align: middle;}
 .portrayal{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+
   grid-gap: 10px;
+}
+.portrayal img{
+    width: 100%;
+    height: 100%;
 }
 .team{
   display: grid;
@@ -176,7 +133,7 @@ slideshow-container img {vertical-align: middle;}
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 10px;2
   width: 80%;
   margin: 0 auto;
 }
@@ -316,4 +273,13 @@ li img{
   position: absolute;
   width: 50px;
   height: 50px;
+}
+
+.code4ct {
+  display: block;
+}
+
+
+.text{
+    background-color: rgba(0,0,0, 0.5);
 }

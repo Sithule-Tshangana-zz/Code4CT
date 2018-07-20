@@ -1,6 +1,7 @@
 body{
   display: grid;
 }
+
 header {
   background-color: white;
   position: fixed;
@@ -36,8 +37,8 @@ header {
   margin-right: 20px;
 }
 .top{
-  background-color: #8080808a;
-  margin-top: 100px;
+  background-color: #ccc;
+  padding: 5% 0;
 }
 
 
@@ -74,7 +75,7 @@ input[type=text] {
   transition: width 0.4s ease-in-out;
   padding: 10px;
   color: inherit;
-  border-radius: 250px;
+  /* border-radius: 250px; */
 }
 .contact_us{
   padding: 5px;
@@ -95,10 +96,30 @@ input[type=text] {
   grid-gap: 10px;
 }
 /* Responsive for mobile */
-@media screen and (main-width:600px){
+@media only screen
+ and (max-width:1023px){
+ /* and (max-width:767px){ */
+
+  /* body{
+    background-color: red;
+  } */
+
   form{
     margin: 0;
   }
+/* form > table > tr > td > input { */
+
+.input-data{
+  /* background-color: blue; */
+  display: flex;
+}
+.contact_us input{
+  width: 50%;
+}
+.contact_us textarea{
+  border-radius: 9px;
+  width: 50%;
+}
   .contact{
     margin: 0;
     padding: 0;
@@ -110,6 +131,11 @@ input[type=text] {
   width: 100px;
   height: 40px;
 }
+
+.contact button:hover {
+  width: 110px;
+}
+
 /* Set the size of the div element that contains the map */
 #map {
   margin-top: 10px;

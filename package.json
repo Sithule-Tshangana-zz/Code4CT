@@ -1,0 +1,20 @@
+{
+  "name": "Code4CT",
+  "version": "1.0.0",
+  "description": "The organisation Code4CT is rebuilding their website and they want it to look more modern and beautiful. Their idea is to have a more responsive, interactive and more engaging site, by having a website like that it will help users/visitors stay longer on the site and hence they will get the message and what Code4CT is for",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sithule-Tshangana/Code4CT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sithule-Tshangana/Code4CT/issues"
+  },
+  "homepage": "https://github.com/Sithule-Tshangana/Code4CT#readme"
+}
